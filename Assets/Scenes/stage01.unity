@@ -416,7 +416,6 @@ GameObject:
   - component: {fileID: 392171161}
   - component: {fileID: 392171160}
   - component: {fileID: 392171159}
-  - component: {fileID: 392171165}
   - component: {fileID: 392171164}
   m_Layer: 0
   m_Name: Player
@@ -524,28 +523,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 392171158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 61d6c67cea98ae621b28c7c2274a97e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: ed28be80bba2804b191429140b9e2546, type: 2}
---- !u!114 &392171165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392171158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+  speed: 10
 --- !u!1 &423303017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1126,6 @@ GameObject:
   - component: {fileID: 1278320440}
   - component: {fileID: 1278320439}
   - component: {fileID: 1278320438}
-  - component: {fileID: 1278320442}
   - component: {fileID: 1278320441}
   m_Layer: 0
   m_Name: Main Camera
@@ -1228,29 +1208,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1278320437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d97efff1f3bae6429d4a53a5b35f416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 44d976f02001621059ade47c6995d39c, type: 2}
---- !u!114 &1278320442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278320437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Target","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 392171158}
+  Target: {fileID: 392171158}
 --- !u!1 &1320706524
 GameObject:
   m_ObjectHideFlags: 0
