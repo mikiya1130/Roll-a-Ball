@@ -29,7 +29,10 @@ public class CreateItems : MonoBehaviour
 
             if (cols.Length == 0)
             {
-                Instantiate(Item, new Vector3(x, y, z), Quaternion.identity);
+                Instantiate(Item,
+                new Vector3(x, y, z),
+                Quaternion.identity,
+                this.transform);
                 break;
             }
         }
