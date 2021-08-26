@@ -9,20 +9,18 @@ public class CreateDangerWalls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float[] x = { 4.0f, 4.0f, -5.0f };
-        float[] y = { 0.5f, 0.5f, 0.5f };
-        float[] z =
+        Vector3[] Position =
         {
-            Random.Range(2.5f, 6.5f),
-            Random.Range(-6.5f, -2.5f),
-            Random.Range(-2.0f, 2.0f)
+            new Vector3(4.0f, 0.5f, Random.Range(2.5f, 6.5f)),
+            new Vector3(4.0f, 0.5f, Random.Range(-6.5f, -2.5f)),
+            new Vector3(-5.0f, 0.5f, Random.Range(-2.0f, 2.0f))
         };
         int[] rotationY = { 0, 0, 90 };
 
-        for (int i = 0; i < x.Length; i++)
+        for (int i = 0; i < Position.Length; i++)
         {
             Instantiate(DangerWall,
-            new Vector3(x[i], y[i], z[i]),
+            Position[i],
             Quaternion.Euler(0, rotationY[i], 0),
             this.transform);
         }
