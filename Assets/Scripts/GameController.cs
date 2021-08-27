@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
 
     public GameObject HowToPlay;
 
+    public GameObject Joystick;
+
     public GameObject Player;
 
     static bool first = true;
@@ -30,6 +32,7 @@ public class GameController : MonoBehaviour
             Button.transform.Find("Text").gameObject.GetComponent<Text>().text =
                 "Play";
             HowToPlay.SetActive(true);
+            Joystick.SetActive(false);
             Player.GetComponent<PlayerController>().stop = true;
             first = false;
         }
@@ -67,6 +70,8 @@ public class GameController : MonoBehaviour
         ResultLabel.SetActive(true);
 
         Button.SetActive(true);
+
+        Joystick.SetActive(false);
 
         Player.GetComponent<PlayerController>().stop = true;
     }

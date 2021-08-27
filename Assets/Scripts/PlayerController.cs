@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Joystick joystick;
+
     public float speed = 10.0f;
 
     public GameObject Item;
@@ -27,8 +29,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        inputHorizontal = Input.GetAxisRaw("Horizontal");
-        inputVertical = Input.GetAxisRaw("Vertical");
+        inputHorizontal = Input.GetAxisRaw("Horizontal") + joystick.Horizontal;
+        inputVertical = Input.GetAxisRaw("Vertical") + joystick.Vertical;
 
         countItem = GameObject.FindGameObjectsWithTag(Item.tag).Length;
     }
