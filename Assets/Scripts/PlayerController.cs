@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Item;
 
+    public bool stop = false;
+
     Rigidbody rb;
 
     float inputHorizontal;
@@ -33,7 +35,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (countItem != 0)
+        if (stop)
+        {
+            rb.velocity = Vector3.zero;
+        }
+        else
         {
             Vector3 forward =
                 Vector3
@@ -45,10 +51,6 @@ public class PlayerController : MonoBehaviour
                 Camera.main.transform.right * inputHorizontal;
 
             rb.AddForce(move * speed);
-        }
-        else
-        {
-            rb.velocity = Vector3.zero;
         }
     }
 }

@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 7842974022606447645}
   - component: {fileID: 1726103867297118206}
   - component: {fileID: 4436898877386142118}
-  - component: {fileID: 510432610969851215}
-  - component: {fileID: 7327574533760323176}
+  - component: {fileID: -4374088416280728899}
   m_Layer: 0
   m_Name: DangerWall
   m_TagString: Untagged
@@ -95,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &510432610969851215
+--- !u!114 &-4374088416280728899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,25 +103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7194017815627142921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d3d011af3d404bd79cbc306abd054fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &7327574533760323176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7194017815627142921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 27a6187bdabed06bbaf9b544ed8b2bb1, type: 2}
+  GameController: {fileID: 0}
