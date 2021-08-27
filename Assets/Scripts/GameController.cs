@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject Panel;
+
     public GameObject ScoreLabel;
 
     public GameObject ResultLabel;
@@ -22,6 +24,7 @@ public class GameController : MonoBehaviour
     {
         if (first)
         {
+            Panel.SetActive(true);
             ScoreLabel.SetActive(false);
             Button.SetActive(true);
             Button.transform.Find("Text").gameObject.GetComponent<Text>().text =
@@ -57,6 +60,8 @@ public class GameController : MonoBehaviour
 
     void printMenu(string text)
     {
+        Panel.SetActive(true);
+
         Text result_text = ResultLabel.GetComponent<Text>();
         result_text.text = text;
         ResultLabel.SetActive(true);
